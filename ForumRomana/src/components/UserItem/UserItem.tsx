@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
 
 import colors from "../../../assets/theme/colors";
-import settings from "../../../assets/theme/settings";
 import {
   useDeleteLikeMutation,
   useGetLikesQuery,
@@ -63,7 +62,6 @@ export const UserItem = ({ navigation, item, handleCallback }) => {
             showConfirmButton: false,
             timer: 1500,
           });
-          console.log(`delete user ${user.firstName} ${user.lastName}`);
           for (const like of likes) {
             if (like.userId === user.id) {
               deleteLike(like);
@@ -165,7 +163,7 @@ const styles = StyleSheet.create({
     height: 50,
     width: "80%",
     margin: "auto",
-    borderRadius: settings.borderRadius,
+    borderRadius: 8,
     backgroundColor: colors.pink,
     color: colors.white,
     alignItems: "center",

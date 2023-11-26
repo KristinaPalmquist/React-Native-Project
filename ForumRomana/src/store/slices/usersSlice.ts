@@ -1,18 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// const usersSlice = createSlice({
-//   name: "selectedUsers",
-//   initialState: { selectedUsers: [] },
-//   reducers: {
-//     addUser: (state, action) => {
-//       state.selectedUsers = state.selectedUsers.push(action.payload)
-//     },
-//     removeUser: (state, action) => {
-//       state.selectedUsers = state.selectedUsers.splice(action.payload, 1)
-//     },
-//   },
-// });
-
 // spara data vid start
 const initialState = {
   selectedUsers: undefined,
